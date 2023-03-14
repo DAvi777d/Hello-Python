@@ -17,3 +17,18 @@ print(my_bool_variable)
 
 #concatenacion de variables en un print
 print(my_string_variable,my_int_variable, my_bool_variable)
+print("este es el valor de:", my_bool_variable)
+
+#Algunas funciones del sistema 
+print(len(my_string_variable)) # la funcion len cuenta los elementos
+
+#Variables en una sola linea
+name, surname, alias, edad = "Julian", "Barrera", "Mono", 24
+print("*Mi nombre es:",name,"*Mi apellido es:", surname,"*Mi alias es:", alias,"*Mi edad es:", edad)
+
+# Inputs
+first_name = input("what is your name?:")
+age = input("how old are you?:")
+
+print(first_name)
+print(age)
