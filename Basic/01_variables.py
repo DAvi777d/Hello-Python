@@ -32,3 +32,10 @@ age = input("how old are you?:")
 
 print(first_name)
 print(age)
+
+
+#Forzamos el tipo
+address: str = "Mi direccion"
+print(type(address))
+address = 35
+print(type(address))
