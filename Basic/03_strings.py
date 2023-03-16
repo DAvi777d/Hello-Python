@@ -9,7 +9,7 @@ print(len(my_string))
 print(len(my_other_string))
 print(my_string + " " + my_other_string)
 
-my_new_line_string = "Este es un String\ncon salto de línea"
+my_new_line_string = "Este es un String\ncon salto de línea\ndos veces"
 print(my_new_line_string)
 
 my_tab_string = "\tEste es un String con tabulación"
@@ -20,11 +20,15 @@ print(my_scape_string)
 
 # Formateo
 
-name, surname, age = "Brais", "Moure", 35
-print("Mi nombre es {} {} y mi edad es {}".format(name, surname, age))
-print("Mi nombre es %s %s y mi edad es %d" % (name, surname, age))
-print("Mi nombre es " + name + " " + surname + " y mi edad es " + str(age))
+name, surname, age, lenguaje = "Julian", "Barrera", 24, "español"
+hermanos, mascotas, madre = "leonardo, betty y topo", str(2), "blanca" 
+print("Mi nombre es %s mi apellido %s y mi edad %d" % (name, surname, age))
+print("Mi nombre es %s me apellido %s y mi edad es %d" % (name, surname, age))
+print("tengo tres hermanos {}  y {} mascotas y mi madre se llama {}" .format(hermanos,mascotas,madre))
+print(type(mascotas))
+print("Mi nombre es " + name + " " + surname + " y mi edad es " + str(age) + " " + "hablo " + lenguaje)
 print(f"Mi nombre es {name} {surname} y mi edad es {age}")
+print(f"tengo tres hermanos {hermanos}, {mascotas} mascotas, mi madre se llama {madre} y tengo {age} años")
 
 # Desempaqueado de caracteres
 
@@ -34,18 +38,19 @@ print(a)
 print(e)
 
 # División
-
 language_slice = language[1:3]
 print(language_slice)
 
 language_slice = language[1:]
 print(language_slice)
 
-language_slice = language[-2]
+language_slice = language[-3]
 print(language_slice)
 
 language_slice = language[0:6:2]
 print(language_slice)
+
+
 
 # Reverse
 
@@ -54,12 +59,12 @@ print(reversed_language)
 
 # Funciones del lenguaje
 
-print(language.capitalize())
-print(language.upper())
-print(language.count("t"))
-print(language.isnumeric())
-print("1".isnumeric())
-print(language.lower())
+print(language.capitalize())#letra capital primer letra mayuscula
+print(language.upper())#coloca todo el string en mayuscula
+print(language.count("o"))#cuenta cuantos caracteres del argumento que pasamos tiene el string
+print(language.isnumeric())#dice si es numerico o no 
+print("1".isnumeric())#dice si es numerico o no
+print(language.lower())#coloca todo en minusculas
 print(language.lower().isupper())
 print(language.startswith("Py"))
 print("Py" == "py")  # No es lo mismo
