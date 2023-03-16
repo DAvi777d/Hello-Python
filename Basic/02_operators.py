@@ -8,9 +8,9 @@ print(3 - 4)
 print(3 * 4)
 print(3 / 4)
 print(10 % 3)
-print(10 // 3)
-print(2 ** 3)
-print(2 ** 3 + 3 - 7 / 1 // 4)
+print(10 // 3) #division exacta o entera 
+print(2 ** 3) #Elevacion a un exponente
+print(2 ** 3 + 3 - 7 // 1 // 4)
 
 # Operaciones con cadenas de texto
 print("Hola " + "Python " + "¿Qué tal?")
@@ -20,8 +20,17 @@ print("Hola " + str(5))
 print("Hola " * 5)
 print("Hola " * (2 ** 3))
 
+
+'''en esta operacion convertimos la variable my_float
+a entero para poder jugar con el str puesto que si no
+python tomaria my_float como un 5.0 y nos arrojaria 
+un error
+'''
+my_float = 2.5 * 2               
+print("Hola " * int(my_float))
 my_float = 2.5 * 2
 print("Hola " * int(my_float))
+
 
 ### Operadores Comparativos ###
 
