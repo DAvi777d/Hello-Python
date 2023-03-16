@@ -66,5 +66,5 @@ print(language.isnumeric())#dice si es numerico o no
 print("1".isnumeric())#dice si es numerico o no
 print(language.lower())#coloca todo en minusculas
 print(language.lower().isupper())
-print(language.startswith("Py"))
+print(language.startswith("Py"))#con lo que inicia el parametro que estamos usando
 print("Py" == "py")  # No es lo mismo
