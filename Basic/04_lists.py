@@ -7,32 +7,27 @@
 my_list = list()
 my_other_list = []
 
-print(len(my_list))
 
-my_list = [35, 24, 62, 52, 30, 30, 17]
+# Acceso a elementos y búsqueda
+
+my_list = [35,24,62,52,30,30,17]
 
 print(my_list)
 print(len(my_list))
 
-my_other_list = [35, 1.77, "Brais", "Moure"]
+my_other_list =[24,1.65,"Julian","Barrera"]
 
-print(type(my_list))
-print(type(my_other_list))
-
-# Acceso a elementos y búsqueda
-
-print(my_other_list[0])
 print(my_other_list[1])
-print(my_other_list[-1])
-print(my_other_list[-4])
-print(my_list.count(30))
+print(my_other_list[-1]) 
+print(type(my_other_list))
+print(my_list.count(30)) #cuenta elementos repetidos de la misma lista
 # print(my_other_list[4]) IndexError
 # print(my_other_list[-5]) IndexError
 
-print(my_other_list.index("Brais"))
+print(my_other_list.index("Julian"))
 
 age, height, name, surname = my_other_list
-print(name)
+print(name,surname)
 
 name, height, age, surname = my_other_list[2], my_other_list[1], my_other_list[0], my_other_list[3]
 print(age)
@@ -40,8 +35,8 @@ print(age)
 # Concatenación
 
 print(my_list + my_other_list)
-#print(my_list - my_other_list)
-
+#print(my_list - my_other_list) Arroja un error
+'''
 # Creación, inserción, actualización y eliminación
 
 my_other_list.append("MoureDev")
@@ -92,3 +87,4 @@ print(my_new_list[1:3])
 my_list = "Hola Python"
 print(my_list)
 print(type(my_list))
+'''
