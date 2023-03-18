@@ -2,12 +2,12 @@
 
 ### Tuples ###
 
-# Definición
+# Definición una tupla es inmutable es decir no se puee modificar
 
 my_tuple = tuple()
 my_other_tuple = ()
 
-my_tuple = (35, 1.77, "Brais", "Moure", "Brais")
+my_tuple = (35, 1.64, "Julian", "David", "Barrera")
 my_other_tuple = (35, 60, 30)
 
 print(my_tuple)
@@ -20,9 +20,9 @@ print(my_tuple[-1])
 # print(my_tuple[4]) IndexError
 # print(my_tuple[-6]) IndexError
 
-print(my_tuple.count("Brais"))
-print(my_tuple.index("Moure"))
-print(my_tuple.index("Brais"))
+print(my_tuple.count("Julian"))
+print(my_tuple.index("David"))
+print(my_tuple.index("Barrera"))
 
 # my_tuple[1] = 1.80 'tuple' object does not support item assignment
 
@@ -50,5 +50,5 @@ print(type(my_tuple))
 
 # del my_tuple[2] TypeError: 'tuple' object doesn't support item deletion
 
-del my_tuple
+del my_tuple # elimina por completo la variable
 # print(my_tuple) NameError: name 'my_tuple' is not defined
