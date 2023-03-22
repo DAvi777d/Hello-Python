@@ -10,15 +10,15 @@ my_other_dict = {}
 print(type(my_dict))
 print(type(my_other_dict))
 
-my_other_dict = {"Nombre": "Brais",
-                 "Apellido": "Moure", "Edad": 35, 1: "Python"}
+my_other_dict = {"Nombre": "Julian",
+                 "Apellido": "Barrera", "Edad": 24, 1: "Python"}
 
 my_dict = {
-    "Nombre": "Brais",
-    "Apellido": "Moure",
-    "Edad": 35,
-    "Lenguajes": {"Python", "Swift", "Kotlin"},
-    1: 1.77
+    "Nombre": "Julian",
+    "Apellido": "Barrera",
+    "Edad": 24,
+    "Lenguajes": {"Python", "javascript", "Kotlin"},
+    1: 1.65
 }
 
 print(my_other_dict)
@@ -32,17 +32,17 @@ print(len(my_dict))
 print(my_dict[1])
 print(my_dict["Nombre"])
 
-print("Moure" in my_dict)
+print("Julian" in my_dict)
 print("Apellido" in my_dict)
 
 # Inserción
 
-my_dict["Calle"] = "Calle MoureDev"
+my_dict["Calle"] = "Calle MoureDev"#agregamos un nuevo valor y clave
 print(my_dict)
 
 # Actualización
 
-my_dict["Nombre"] = "Pedro"
+my_dict["Nombre"] = "Pedro"# actualiza el valor de la clave nombre 
 print(my_dict["Nombre"])
 
 # Eliminación
@@ -52,9 +52,10 @@ print(my_dict)
 
 # Otras operaciones
 
-print(my_dict.items())
-print(my_dict.keys())
-print(my_dict.values())
+print(my_dict.items()) #listado de todos los items separados con valores por ()
+print(my_dict.keys())#muestra las claves 
+print(my_dict.values())# muestra todos los valores
+#print(my_dict.fromkeys("Nombre",1))#crea un diccionario en base al anterior 
 
 my_list = ["Nombre", 1, "Piso"]
 
@@ -62,9 +63,9 @@ my_new_dict = dict.fromkeys((my_list))
 print(my_new_dict)
 my_new_dict = dict.fromkeys(("Nombre", 1, "Piso"))
 print((my_new_dict))
-my_new_dict = dict.fromkeys(my_dict)
+my_new_dict = dict.fromkeys(my_dict)#creamos un nuevo diccionario con las claves del diccionario anterior
 print((my_new_dict))
-my_new_dict = dict.fromkeys(my_dict, "MoureDev")
+my_new_dict = dict.fromkeys(my_dict, "MoureDev")#crea un diccionario con un valor 
 print((my_new_dict))
 
 my_values = my_new_dict.values()

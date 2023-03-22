@@ -22,8 +22,11 @@ elif my_condition == 25:
     print("Es igual a 25")
 else:
     print("Es menor o igual que 10 o mayor o igual que 20 o distinto de 25")
+    
+    
+    print("La ejecución continúa")#si tabulamos va continuar imprimiendo si quitamos la tabulacioin ya queda fuera de la condicion
 
-print("La ejecución continúa")
+print("La ejecución continúa")#este imprime ya que quitamos la tabulacion
 
 # Condicional con ispección de valor
 
